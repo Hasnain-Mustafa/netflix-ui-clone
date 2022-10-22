@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Arial", sans-serif;
+  background-color: #111;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.6rem;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-top: 2rem;
+  width: 14rem;
+  object-fit: contain;
+}
+
+.nav-avatar {
+  width: 4.5rem;
+  object-fit: contain;
+}
+
+.nav-black {
+  background-color: #111;
+}
+
+.netflix-originals {
+  margin-top: 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-secondary {
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.movie-poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 10rem;
+  margin-right: 1rem;
+  transition: all 450ms;
+}
+
+.movie-poster:hover {
+  transform: scale(1.08);
+}
+
+.movie-poster-large {
+  max-height: 25rem;
+}
+
+.movie-poster-large:hover {
+  transform: scale(1.09);
+}
+
+.movies-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 2rem;
+}
+
+.movies-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.banner {
+  background-image: url(./netflix-images/banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  object-fit: contain;
+  height: 44.8rem;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+.banner-contents {
+  margin-left: 3rem;
+  padding-top: 14rem;
+  height: 19rem;
+  position: relative;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+}
+
+.banner-description {
+  margin-top: 2rem;
+  line-height: 1.3;
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-width: 36rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn-primary {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  outline: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 0.2vw;
+  padding: 2rem 4rem;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #dadada;
+  transition: all 0.3s;
+}
+
+.banner-fadeBottom {
+  margin-top: -1rem;
+  height: 8.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.808)
+  );
+}
